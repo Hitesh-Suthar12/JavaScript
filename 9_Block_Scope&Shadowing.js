@@ -18,10 +18,10 @@ Things learned:
 7. var value stored in global memory and hence can be accessed outside block as well whereas same is not the case with let and const.
 
 */
-
+ 
 // this is "Block" in Java Script (Space bitween 2 curly bracket)
 // {
-
+//  // Compound Statement
 // }
 
 // eg

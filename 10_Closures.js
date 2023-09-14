@@ -14,7 +14,7 @@ The fun in JavaScript is you can assign a variable for a function and also you c
 Ans -> Whenever I call a function in JavaScript the closure maintains its values(lexical env.) and function in its own runtime and when that specific function executed, it returns with own environment even the variable vanished after its execution
 
 */
-
+  
 /*
 ---> Use of Closures:
 1. Module Design pattern
