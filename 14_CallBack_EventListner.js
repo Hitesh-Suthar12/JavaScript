@@ -1,5 +1,6 @@
 // What is callBack function in JavaScript?
 // ---> you already know  that, function are First class citizens in java script.
+//  Function that is passed on as argument to another function is called callback function.
 //  that mean you take a function and passed to another function, this is known CallBack function.
 
 //---->  Java Script is a synchronous and single-threated language.

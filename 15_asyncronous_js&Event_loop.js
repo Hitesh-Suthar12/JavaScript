@@ -15,3 +15,10 @@
 // 5. The event loop continuously monitors both the callback (or Task) queue and the callstack, and then sends pending functions to the callstack when it is empty
 // 6. However, functions that have some a promise (such as Fetch()) are actually sent to the microtask queue, which has higher priority than the callback queue.These functions are executed first
  
+// setTimeout is not a part of javascript.
+// Also DOM APT's is not a part of javascript.
+// fetch() 
+// lcoal storage
+// console.log
+// Location 
+// this all above is part of browser, not a javascript.

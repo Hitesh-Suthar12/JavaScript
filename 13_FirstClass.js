@@ -1,5 +1,5 @@
 // Functiom Statement
-// --> this code is known fucntion statement example
+
 // Creating a simple function is known as function statement.
 
 // a(); // Function Statement
@@ -9,28 +9,39 @@
 // a(); //Function Statement
 
 // ***********  ***********  ***********  ***********  ***********  ***********  ***********
-// -->  different between expression and statement is only "Hoisting".
 
 // Function Expression
+
 // --> we can asign a function as a value
+
 // b(); // TypeError: b is not a function
-// var b = function b() {
+// var b = function b() { // b is not define bcoz we store a function in varible
 //   console.log("Function Expression");
 // };
 // b(); // Function Expression
 
 // ***********  ***********  ***********  ***********  ***********  ***********  ***********
 
+// **imp : whtat is the different between function expression and function statement?
+// ans --> different between function expression and function statement is only "Hoisting".
+
+// ***********  ***********  ***********  ***********  ***********  ***********  ***********
+
 // Function Declaration
-// ---> Function Statement is known as function declaration.
+// ---> Function Statement is known as function declaration.(same as function statement)
 
 // ***********  ***********  ***********  ***********  ***********  ***********  ***********
 
 // Anonymous Function
 // --> Anonymous fucntion is when function used as value.
-// function () {
+// function without name is known anonymous function.
+// anonymous function does not have self identity.
+/*
+    function () {
 
-// }
+    }
+*/
+//  output :
 //  this code throw error - SyntaxError: Function statements require a function name
 
 // ***********  ***********  ***********  ***********  ***********  ***********  ***********
@@ -46,8 +57,9 @@
 
 // ***********  ***********  ***********  ***********  ***********  ***********  ***********
 
-// Different between Parameter & Arguments
-// ---> the identifier or value , that are called parameter.
+// **imp : Different between Parameter & Arguments
+
+// ---> the identifier or value , that are called parameter. parameter does not access from outside of fxn.
 // eg :
 // function x(param1, param2) { // this is parameter
 //     console.log("Parameter");
@@ -109,7 +121,7 @@
 // *     Can be taken as return form.
 //        For Ex - var b = function(param){
 //                              return function xyz(){
-//                                      console.log(" F C F ");
+//                                      console.log(" First Class Fxn ");
 //                              }
 //                      }
 

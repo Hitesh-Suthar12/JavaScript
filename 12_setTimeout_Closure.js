@@ -1,7 +1,7 @@
 // the most frequently asked (setTimeout + Closures in a loop) hot trending JS Interview question. 🔥This question will strengthen your knowledge and understanding of Closures and will also help you in your frontend/full stack/ web development interview. We will start with an easy JS question and slowly move to the hard and tricky interview question.
 
 /*
-
+ 
 Things learned:
 1. setTimeout stores the function in a different place and attached a timer to it, when the timer is finished it rejoins the call stack and executed.
 2. Without closure the var reference gives the latest value as it does not retain the original value but rather has the reference so any update in value after timeout will be shown.
@@ -18,6 +18,10 @@ Things learned:
 // }
 // x();
 
+//output : 
+// Namaste JavaScript!
+// 5
+
 // ************** using var in for loop ******************   ***************
 
 // function x() {
@@ -29,6 +33,7 @@ Things learned:
 // console.log("Namaste JavaScript!");
 // }
 // x();
+
 // output
 // Namaste JavaScript!
 // 6
@@ -40,7 +45,7 @@ Things learned:
 // **************  using let in for loop  ******************   ***************
 
 // function x() {
-//     for (let i = 1; i <= 5; i++) { // in this let is Block scope so each setTimeout is called by loop and make new variable
+//     for (let i = 1; i <= 5; i++) { // in this let is Block scope so each setTimeout is called by loop and make new variable, that's why print 1 2 3 4 5 
 //       setTimeout(function () {
 //         console.log(i);
 //       }, i * 2000);
@@ -59,7 +64,7 @@ Things learned:
 // **************   *****************   ******************   ***************
 
 function x() {
-  for (var i = 1; i <= 5; i++) {
+  for (var i = 1; i <= 5; i++) { // here we using "var" instead of using 'let'
     function close(x) {
       setTimeout(function () {
         console.log(x);
@@ -70,3 +75,11 @@ function x() {
   console.log("Namaste JavaScript!");
 }
 x();
+ 
+// output :
+// Namaste JavaScript!
+// 1
+// 2
+// 3
+// 4
+// 5

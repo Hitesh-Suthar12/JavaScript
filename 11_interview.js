@@ -9,7 +9,7 @@ Things learned:
 
 */
 // *****************  ******************  *********************  ****************  ***************
-
+ 
 // Q ->  What is a Closure in JavaScript?
 // ----> A function along with a refference to its outer enviroonment, like together forms is closure.
 // -----> other way - Closure is a combination of a fuction and its lexical scope bunddle together fomrs a closure.
@@ -23,6 +23,8 @@ Things learned:
 // }
 //  // output : 10
 
+// *****************  ******************  *********************  ****************  ***************
+
 // function outer() {
 //     var a = 5;
 //     function inner() {
@@ -31,7 +33,7 @@ Things learned:
 //     return inner;
 //   }
 //   outer()();
-//   output : 10
+//  // output : 10
 
 // *****************  ******************  *********************  ****************  ***************
 
@@ -42,6 +44,7 @@ Things learned:
 // *****************  ******************  *********************  ****************  ***************
 
 // Q -> Are Let declarations closed over?
+
 // function outer(b) {
 //     function inner() {
 //         console.log(a, b);
@@ -57,6 +60,7 @@ Things learned:
 // *****************  ******************  *********************  ****************  ***************
 
 // Q -> Are function parameters closed over?
+
 // function outest() {
 //   var c = 50;
 //   function outer(b) {
@@ -70,6 +74,7 @@ Things learned:
 // }
 // var close = outest()("HelloWorld");
 // close();
+
 // output :  10 'HelloWorld' 50
 
 // *****************  ******************  *********************  ****************  ***************
@@ -113,6 +118,7 @@ Things learned:
 // *****************  ******************  *********************  ****************  ***************
 
 // Q -> Example of Data Privacy using Closures
+
 //  in this code, we are hidding or privacy on the inside code, so from outer side we cannot call it.
 // function counter() {
 //   var count = 0;

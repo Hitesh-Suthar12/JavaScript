@@ -2,19 +2,22 @@
 // ---> Closure : Combination of Function bundled with its lexical environment is known as a closure. Whenever function is returned, even if its vanished in execution context but still it remembers the reference it was pointing to. Its not just that function alone it returns but the entire closure and that's where it becomes interesting !! Thank you so much, Akshay for this. :)
 
 /*
+
+// function along with its lexical scope forms a clousure.
+
 .......Q)What is closure?
-Ans -> The function bundled with its lexical environment closed to that function
-simply function + Lexical environment
+Ans -> Closure is a function bundled with its lexical environment closed to that function
+simply function + its Lexical environment
 
 and closures have very special place in runtime environment
 
 The fun in JavaScript is you can assign a variable for a function and also you can pass function as a parameter even you can return the function in JavaScript!!
 
 ....Q)  What does the closure do in my JavaScript programs?
-Ans -> Whenever I call a function in JavaScript the closure maintains its values(lexical env.) and function in its own runtime and when that specific function executed, it returns with own environment even the variable vanished after its execution
+Ans -> Whenever I call a function in JavaScript the closure maintains its values(lexical environment) and function in its own runtime and when that specific function executed, it returns with own environment even the variable vanished after its execution
 
 */
-  
+
 /*
 ---> Use of Closures:
 1. Module Design pattern
@@ -50,8 +53,8 @@ Ans -> Whenever I call a function in JavaScript the closure maintains its values
 // }
 // var z = x();
 // console.log(z);
-// // ......
-// z();
+// // ...... thousand of line over here
+// z(); // if do not add "z()" here, then u not get "7" in ouput.
 
 // // // output
 // // ƒ y() {
@@ -60,7 +63,9 @@ Ans -> Whenever I call a function in JavaScript the closure maintains its values
 // // 7
 
 // *****************************         ***************************************
+
 // you can directly add return, this is also same as previous in which return y.
+
 // function x() {
 //   var a = 7;
 //   return function y() {
@@ -115,3 +120,6 @@ function z() {
   x();
 }
 z();
+
+// output:
+// 7 900
