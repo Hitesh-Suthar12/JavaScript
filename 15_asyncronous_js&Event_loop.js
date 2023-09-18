@@ -21,4 +21,4 @@
 // lcoal storage
 // console.log
 // Location 
-// this all above is part of browser, not a javascript.
+// this all above is part of browser, not a javascript.  

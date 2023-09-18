@@ -10,6 +10,7 @@ const arr = [5, 2, 1, 8, 10];
 
 // ********************************* [ map function ] *********************************
 
+// map tab use karte he jb arr k andar ki sari value ko transform krna ho like eg. below :
 // eg : Double - [10, 4, 2, 16, 20]
 // Triple - [15, 6, 3, 24, 30]
 // Binary - ["101", "10", "1", "1000", "1010"];
@@ -32,8 +33,8 @@ const arr = [5, 2, 1, 8, 10];
 
 // const arr2 = [5, 2, 1, 8, 10, 23, 17];
 // // find odd number
-// const max = arr2.filter((x) => x % 2);
-// console.log(max);
+// const oddNum = arr2.filter((x) => x % 2);
+// console.log(oddNum);
 
 // find Even number in Array
 // function isEven(x) {
@@ -56,6 +57,10 @@ const arr = [5, 2, 1, 8, 10];
 
 // ********************************* [ Reduce function ] *********************************
 
+// reduce - ye waha use krte he jaha par arr ki sabhi value ko interate krna ho ya fir loop chalana ho esi jagah par reduce ka use krte he, like - find sun, find max num, find negative num etc.
+
+// reduce humesa 2 parameter leta he, (acc and curr).
+
 const arr3 = [5, 2, 1, 8, 10, 23, 17];
 // regular way to add sum or array
 function sumArr(x) {
@@ -73,7 +78,7 @@ const array = [15, 2, 1, -5, 8, 130, 523, 17];
 const sumArray = array.reduce((acc, curr) => {
   acc = acc + curr;
   return acc;
-}, 0);
+}, 0); // here 0 is the initialize starting value eg : let sum = 0, same ese hi curr ko 0 se initialize kra he
 console.log(sumArray);
 
 // find Max number in given array
@@ -90,17 +95,16 @@ const maxNumber = maxNum(array);
 console.log(maxNumber);
 
 // now find max number using Reduce method
-const maximunNum = array.reduce((acc, curr) => {
-  if (curr > acc) {
-    acc = curr;
+const maximunNum = array.reduce((max, curr) => {
+  if (curr > max) {
+    max = curr;
   }
-  return acc;
+  return max;
 }, 0);
 
 console.log(maximunNum);
 
 // find Min Number in Given Array
-
 function minNumber(x) {
   let min = array[0];
   for (let i = 0; i < array.length; i++) {
@@ -162,3 +166,4 @@ const output = users.reduce(function (acc, curr) {
 }, []);
 
 console.log(output);
+ 
