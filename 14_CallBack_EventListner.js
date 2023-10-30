@@ -3,6 +3,8 @@
 //  Function that is passed on as argument to another function is called callback function.
 //  that mean you take a function and passed to another function, this is known CallBack function.
 
+// function which get passed as an argument to another function is called call back function.
+
 //---->  Java Script is a synchronous and single-threated language.
 // this execute line by line or specific order.
 

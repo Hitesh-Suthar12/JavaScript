@@ -11,6 +11,7 @@ const arr = [5, 2, 1, 8, 10];
 // ********************************* [ map function ] *********************************
 
 // map tab use karte he jb arr k andar ki sari value ko transform krna ho like eg. below :
+
 // eg : Double - [10, 4, 2, 16, 20]
 // Triple - [15, 6, 3, 24, 30]
 // Binary - ["101", "10", "1", "1000", "1010"];
@@ -166,4 +167,3 @@ const output = users.reduce(function (acc, curr) {
 }, []);
 
 console.log(output);
- 

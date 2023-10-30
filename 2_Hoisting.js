@@ -1,5 +1,9 @@
 // NOTE  =  Even before the line of code is executed, the memory place will be allocated to the variable and function.
 
+// Hoisting in JavaScript allows you to access variables and function declarations before they are initialized or assigned a value in your code.
+
+// Hoisting is phinomina in JavsScript by which you can access this variable & function even before you have initialized or you have put some value in it. You can access it without any error. 
+
 /*
 
 let x = 7;

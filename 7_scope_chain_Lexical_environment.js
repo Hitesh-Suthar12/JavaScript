@@ -3,12 +3,12 @@
 // Lexical mean - Herarky or in a sequenc
 
 // lexical chain in called scope chain.
-
+ 
 /*
 Lexical Environment  -  
 Lexical environment = EC's Local Memory + Reference to Lexical Environment of its parent.
 
-1) Lexical Environment of its parent is the scope where a function is physically present or defined. So, suppose a function x(), is defined and invoked in the GEC (Global Execution context), when function x()'s EC is pushed in the call stack, it stores a reference to its parent's lexical environment i.e. the GEC's memory.
+1) Lexical Environment of its parent is the scope where a function is physically present or defined. So, suppose a function x(), is defined and invoked in the GEC (Global Execution context), when function x()'s EC (Execution context) is pushed in the call stack, it stores a reference to its parent's lexical environment i.e. the GEC's memory.
 
 2) Whenever a new Execution Context is pushed in the Call Stack it holds a reference to the Lexical Environment of its parent, i.e. the EC's memory from where it was invoked.
 

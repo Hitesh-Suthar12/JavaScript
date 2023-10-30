@@ -107,10 +107,10 @@ Ans -> Whenever I call a function in JavaScript the closure maintains its values
 // *****************************         ***************************************
 
 function z() {
-  // this is closure (z) - 900
+  // this is closure (z) = 900
   var b = 900;
   function x() {
-    // this is closure (x) - 7
+    // this is closure (x) = 7
     var a = 7;
     function y() {
       console.log(a, b);
@@ -121,5 +121,5 @@ function z() {
 }
 z();
 
-// output:
+// output: 
 // 7 900
